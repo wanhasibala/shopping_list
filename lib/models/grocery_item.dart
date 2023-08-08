@@ -1,15 +1,4 @@
-enum Category {
-  dairy,
-  fruit,
-  meat,
-  vegetables,
-  carbs,
-  sweets,
-  spices,
-  convenience,
-  hygiene,
-  other
-}
+import 'package:shopping_list/models/category.dart';
 
 class GroceryItem {
   const GroceryItem({
