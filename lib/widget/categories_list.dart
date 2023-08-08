@@ -54,7 +54,14 @@ class _GroceryListState extends State<GroceryList> {
         builder: (context) => const NewItem(),
       ),
     );
-    _loadItems();
+
+    if (newItem == null) {
+      return;
+    }
+
+    setState(() {
+      _groceryItems.add(newItem);
+    });
   }
 
   void _removeState(GroceryItem item) {
